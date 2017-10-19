@@ -1,0 +1,25 @@
+/*@font-face {
+    font-family: SansWideLight;
+    src: url("Synthview - Novecento sans wide Light.otf") format("opentype");
+}*/
+div.alert-wrap h3{
+	font-family: "Novecentosanswide-Light";
+	font-size: 0;
+	color:transparent;;
+	display:block;
+	width:146px;
+	height: 25px;
+	background: url("chrome-extension://__MSG_@@extension_id__/motoread.png")	
+}
+div.alert-wrap span.Saving{
+	font-family: "Open Sans";
+}
+.alert-wrap{position:fixed; top:0;left:0;background:#ffffff;box-shadow:0 2px 5px rgba(0,0,0,0.2);height:60px; width:100%; text-align:center; padding: 15px 30px;box-sizing: border-box; font-family: "Roboto",sans-serif; z-index: 9999999999;}
+.alert-wrap h3 {display: inline-block;float: left; font-size: 22px; margin: 0;}
+.ext-close { height: 32px; opacity: 1; position: absolute; right: 32px; top: 16px; width: 32px; cursor: pointer;}
+.ext-close:before, .ext-close:after { position: absolute;left: 15px; content: ' '; height: 28px; width: 2px; background-color: #333;
+  transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg);-ms-transform: rotate(45deg);}
+.ext-close:after { transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);}
+.Saving {
+	font-family: roboto; font-size: 20px;text-align: center;
+}

@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Motoread",
+  "version": "0.1.5",
+  "version_name": "0.1.5 beta",
+  "description": "POST details of the current page to a remote endpoint.",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon-16.png",
+      "24": "icon-24.png",
+      "32": "icon-32.png"
+    }
+  },
+  "author": "Motoread",
+  "background": {
+    "scripts": [ "event.js" ]
+  },
+  "commands":
+  {
+    "toggle" : 
+    {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Alt+Shift+Y" 
+      },
+      "description" : "Save URL to your Motoread account"
+    }
+  },
+  "content_scripts": [{
+    "css": ["iframe.css"],
+    "js": ["content_script.js"],
+    "matches": ["\u003Call_urls>"]
+  }],
+  "options_page": "options.html",
+  "permissions": ["storage", "tabs", "activeTab", "contextMenus", "http://*/*", "https://*/*"],
+  "web_accessible_resources": ["iframe.html","motoread.png"]
+}
